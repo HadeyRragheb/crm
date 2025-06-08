@@ -1,0 +1,7 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = N'housing100')
+BEGIN
+    CREATE DATABASE housing100
+    ON ( FILENAME = N'C:\Users\W10\Desktop\CRMProject\CRMProject\DB\housing100.mdf' )
+    FOR ATTACH;
+END
+GO
